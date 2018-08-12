@@ -11,11 +11,7 @@ for f in $files; do
 done
 
 # create symlink in ~/${DIRECTORY} for all contents of dotfile *directories in this repo
-dirs=(\
-    ".vim/bundle" \
-    ".vim/luke" \
-    ".scripts" \
-)
+dirs=$(cat dirs.txt)
 for d in ${dirs[@]}; do
   # make target directory to hold symlinks if doesn't exist yet
   if [ ! -d $prefixDir/$d ]; then
