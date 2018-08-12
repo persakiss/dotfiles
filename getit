@@ -7,7 +7,7 @@ prefixDir=$HOME
 # create symlink in $prefixDir for all dot files in this repo
 files=$(find -maxdepth 1 -type f -name ".*")
 for f in $files; do
-  ln -sfr $f $prefixDir/$f
+  ln -sfr $f $prefixDir/
 done
 
 # create symlink in ~/${DIRECTORY} for all contents of dotfile *directories in this repo
@@ -20,6 +20,6 @@ for d in ${dirs[@]}; do
   # create symlinks
   contents=$(ls -a $d | grep -v "\.$")
   for x in $contents; do
-    ln -sfr $d/$x $prefixDir/$d/$x
+    ln -sfr $d/$x $prefixDir/$d/
   done
 done
