@@ -3,4 +3,4 @@
 # A script to make symlinks in home folder from current working directory minus .git
 
 contents=$(find -maxdepth 1 -name ".*" | grep -v -E "(\.git$|\.$|getit$)")
-for f in $contents; do ln -sr $f ~/; done
+for f in $contents; do ln -sfr $f ~/; done
