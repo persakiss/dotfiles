@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# A script to compile the .cpp of the basename working directory and run it
+
 here=$(basename $(pwd))
 stripped=$(echo $here | sed 's/cpp-//')
 g++ *.cpp -o $stripped
