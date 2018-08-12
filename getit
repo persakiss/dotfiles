@@ -2,5 +2,28 @@
 
 # A script to make symlinks in home folder from current working directory minus .git
 
-contents=$(find -maxdepth 1 -name ".*" | grep -v -E "(\.git$|\.$|getit$)")
-for f in $contents; do ln -sfr $f ~/; done
+prefixDir=$HOME
+
+# create symlink in $prefixDir for all dot files in this repo
+files=$(find -maxdepth 1 -type f -name ".*")
+for f in $files; do
+  ln -sfr $f $prefixDir/$f
+done
+
+# create symlink in ~/${DIRECTORY} for all contents of dotfile *directories in this repo
+dirs=(\
+    ".vim/bundle" \
+    ".vim/luke" \
+    ".scripts" \
+)
+for d in ${dirs[@]}; do
+  # make target directory to hold symlinks if doesn't exist yet
+  if [ ! -d $prefixDir/$d ]; then
+    mkdir -p $prefixDir/$d
+  fi
+  # create symlinks
+  contents=$(ls -a $d | grep -v "\.$")
+  for x in $contents; do
+    ln -sfr $d/$x $prefixDir/$d/$x
+  done
+done
