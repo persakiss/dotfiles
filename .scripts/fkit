@@ -1,0 +1,6 @@
+#!/bin/bash
+
+here=$(basename $(pwd))
+stripped=$(echo $here | sed 's/cpp-//')
+g++ *.cpp -o $stripped
+./$stripped
