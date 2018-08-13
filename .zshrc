@@ -1,4 +1,7 @@
-# If you come from bash you might have to change your $PATH.
+# Locale set just in-case
+export LANG=en_US.utf8
+
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.scripts
 
