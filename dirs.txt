@@ -2,3 +2,4 @@
 .vim/luke
 .vim/autoload
 .scripts
+.oh-my-zsh
