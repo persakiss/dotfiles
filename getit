@@ -5,7 +5,7 @@
 prefixDir=$HOME
 
 # create symlink in $prefixDir for all dot files in this repo
-files=$(find -maxdepth 1 -type f -name ".*")
+files=$(find -maxdepth 1 -type f -name ".*" | grep -v "\.gitmodules")
 for f in $files; do
   ln -sfr $f $prefixDir/
 done
