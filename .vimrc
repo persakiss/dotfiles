@@ -4,6 +4,9 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
+" For pocketCHIP
+        set t_Co=256
+
 let mapleader =" "
 " Load Pathogen for plugins:
 	execute pathogen#infect()
