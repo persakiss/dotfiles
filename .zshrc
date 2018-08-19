@@ -4,8 +4,8 @@ export LANG=en_US.utf8
 # Export defaults
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export TERM=st-256color
-export TERMINAL=st-256color
+export TERM=st
+export TERMINAL="$TERM"
 export BROWSER="firefox"
 
 
