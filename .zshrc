@@ -5,6 +5,8 @@ export LANG=en_US.utf8
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERM=st-256color
+export BROWSER="firefox"
+
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.scripts
