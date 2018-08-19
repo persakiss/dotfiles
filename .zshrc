@@ -9,8 +9,14 @@ export TERMINAL="$TERM"
 export BROWSER="firefox"
 
 
+# Zshrc default bashrc import
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Add .scripts to PATH
 export PATH=$PATH:$HOME/.scripts
+
+# Add vim-live-latex-preview to PATH
+export PATH=$PATH:$HOME/.vim/bundle/vim-live-latex-preview/bin
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/$USER/.oh-my-zsh"
