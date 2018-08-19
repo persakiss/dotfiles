@@ -3,3 +3,4 @@
 .vim/autoload
 .scripts
 .oh-my-zsh
+Documents/LaTeX
