@@ -1,6 +1,9 @@
 # Locale set just in-case
 export LANG=en_US.utf8
 
+# Export defaults
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.scripts
