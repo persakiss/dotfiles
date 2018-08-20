@@ -27,7 +27,4 @@
 	url = https://github.com/dylanaraps/wal.vim
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh
-[submodule ".vim/bundle/vim-live-latex-preview"]
-	path = .vim/bundle/vim-live-latex-preview
-	url = https://github.com/ying17zi/vim-live-latex-preview.git
+        url = https://github.com/robbyrussell/oh-my-zsh
