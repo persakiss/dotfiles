@@ -1,2 +1,3 @@
-# add vim-live-latex-preview to /etc/profile PATH
-#sudo echo "PATH=$PATH:~/.vim/bundle/vim-live-latex-preview/bin" >> /etc/profile
+# Pacman install inotify-tools, for which vim-latex-live-preview (with mupdf) and .scripts/mupdf.inotify depends
+
+sudo pacman -S inotify-tools

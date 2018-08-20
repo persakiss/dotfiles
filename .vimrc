@@ -311,3 +311,7 @@ set shiftwidth=2
 set softtabstop=2
 set cindent
 
+" @xuhdev's vim-latex-live-preview
+let g:livepreview_previewer = 'mupdf.inotify'
+autocmd Filetype tex setl updatetime=1
+
