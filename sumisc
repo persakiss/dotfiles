@@ -1,2 +1,2 @@
 # add vim-live-latex-preview to /etc/profile PATH
-sudo echo "PATH=$PATH:~/.vim/bundle/vim-live-latex-preview/bin" >> /etc/profile
+#sudo echo "PATH=$PATH:~/.vim/bundle/vim-live-latex-preview/bin" >> /etc/profile
