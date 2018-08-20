@@ -314,4 +314,4 @@ set cindent
 " @xuhdev's vim-latex-live-preview
 let g:livepreview_previewer = 'mupdf.inotify'
 autocmd Filetype tex setl updatetime=1
-map <F11> :LLPStartPreview<CR>
+map <F7> :LLPStartPreview<CR>
