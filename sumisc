@@ -1,3 +1,15 @@
-# Pacman install inotify-tools, for which vim-latex-live-preview (with mupdf) and .scripts/mupdf.inotify depends
+### Do not run these commands as-is unless you know what you're doing.
+### For this reason I've commented, made unexecutable and removed the commands of the riskier ones.
+### This is mainly to serve as a todo for my fresh installs
 
-sudo pacman -S inotify-tools
+## Generate locale
+# sudo locale-gen en_US.UTF-8
+
+## Pacman install inotify-tools, for which vim-latex-live-preview (with mupdf) and .scripts/mupdf.inotify depends
+# sudo pacman -S inotify-tools
+
+## Port some user envs to root env
+# Modify /etc/sudoers: Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* TERM TERMINAL EDITOR VISUAL SHELL"
+
+## Make symbolic links to home .vim and .vimrc to root home
+# sudo ln -s $HOME/.vim /root/.vim && sudo ln -s $HOME/.vimrc /root/.vimrc
