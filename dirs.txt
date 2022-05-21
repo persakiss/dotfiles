@@ -1,7 +1,0 @@
-.vim/bundle
-.vim/luke
-.vim/autoload
-.scripts
-.oh-my-zsh
-.config/i3blocks
-Documents/LaTeX
